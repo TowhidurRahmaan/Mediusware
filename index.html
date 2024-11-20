@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout and Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Semantic Layout Section -->
+    <div class="layout-container">
+        <header>&lt;header&gt;</header>
+        <nav>&lt;nav&gt;</nav>
+        <main>
+            <div class="left-column">
+                <section>&lt;section&gt;</section>
+                <article>&lt;article&gt;</article>
+            </div>
+            <aside>&lt;aside&gt;</aside>
+        </main>
+        <footer>&lt;footer&gt;</footer>
+    </div>
+
+    <!-- Schedule Table Section -->
+    <div class="table-container">
+        <table>
+            <tr>
+                <th rowspan="2">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td class="yellow">8:00 a.m.</td>
+                <td class="blue">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td class="yellow">8:00 a.m.</td>
+                <td>11:00 a.m.</td>
+                <td>XPath</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m.</td>
+                <td class="green">2:00 p.m.</td>
+                <td>XSL Transformations</td>
+            </tr>
+            <tr>
+                <td class="green">2:00 p.m.</td>
+                <td class="blue">5:00 p.m.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td class="yellow">8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <!-- Achievements Section -->
+        <section class="achievements">
+            <h2>Achievements <span class="highlight">&amp; Awards</span></h2>
+            <p>People know us for our top-notch work and great customer service, all of whom have expressed nothing but positive feedback about our services. Take a moment to see for yourself.</p>
+            <div class="logos">
+                <img src="Images/clutch.png" alt="Clutch Rating" width="150" height="60">
+                <img src="Images/upwork" alt="Upwork Top Rated" width="150" height="60">
+                <img src="Images/google.jpg" alt="Google Reviews" width="150" height="60">
+                <img src="Images/developer.png" alt="Certification Badge" width="150" height="60">
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <div>
+                    <h3>Want to know what we are up to?</h3>
+                    <p>Subscribe to our newsletter</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <!-- Profile Card -->
+            <div class="profile-card">
+                <img src="Images/ceo.jpg" alt="Md. Shahinur Rahman" width="160" height="160">
+                <h3>Md. Shahinur Rahman</h3>
+                <p class="job-title">Managing Director, Mediusware</p>
+                <p>I'd be excited to talk with you about your projects or what you need. Fill in the form or reach out on email at "Fill in the form or send us an email to “info@mediusware.com”"</p>
+                <div class="book-call">
+                    <h4>Book a call</h4>
+                    <p>Feel free to select a time at your convenience!</p>
+                    <button class="btn-success">Let's Talk <span>→</span></button>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Got an idea? We've got the skills.</h3>
+                <p>Fill out our contact form and we'll get in touch!</p>
+                <form>
+                    <div class="form-grid">
+                        <div>
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" placeholder="Enter Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" placeholder="Enter Your Email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+                        </div>
+                        <div>
+                            <label for="company">Company Name (Optional)</label>
+                            <input type="text" id="company" placeholder="Enter Your Company Name">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="description">Description (Optional)</label>
+                        <textarea id="description" placeholder="Tell us more about your query"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
