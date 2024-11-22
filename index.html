@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Semantic Layout Section -->
-    <div class="layout-container">
+    <div style="margin:20px;font-weight:bold;" class="layout-container">
         <header>&lt;header&gt;</header>
         <nav>&lt;nav&gt;</nav>
         <main>
@@ -102,19 +102,29 @@
         <section class="contact">
             <!-- Profile Card -->
             <div class="profile-card">
-                <img src="Images/ceo.jpg" alt="Md. Shahinur Rahman" width="160" height="160">
-                <h3>Md. Shahinur Rahman</h3>
-                <p class="job-title">Managing Director, Mediusware</p>
-                <p>I'd be excited to talk with you about your projects or what you need. Fill in the form or reach out on email at "Fill in the form or send us an email to “info@mediusware.com”"</p>
-                <div class="book-call">
+                <div>
+                    <img src="Images/ceo.png" alt="Md. Shahinur Rahman" width="130" height="130">
+                </div>
+                <div class="">
+                <h3 style="color: rgba(7, 43, 74, 1); text-align: left;">Md. Shahinur Rahman</h3>
+                <p class="job-title">Managing Director, Mediusware </style></p>
+                </div>
+                <p style="text-align:left; background-color: white;">I'd be excited to talk with you about your projects or what you need. Fill in the form or reach out on email at "Fill in the form or send us an email to <span>
+                    <a style="color: rgba(12, 152, 235, 1);">"info@mediusware.com"</a>
+
+                </span></p>
+                <div style="text-align: left;">
+                    <h4>Talk to you in less than 24hs.</h4>
+                </div>
+                <div style="border-radius: 8px;" class="book-call">
                     <h4>Book a call</h4>
                     <p>Feel free to select a time at your convenience!</p>
-                    <button class="btn-success">Let's Talk <span>→</span></button>
+                    <p style="color: rgba(12, 152, 235, 1);"> Let's talk &#8594;</p>
                 </div>
             </div>
 
             <!-- Contact Form -->
-            <div class="contact-form">
+            <div style=" background-color: rgba(240, 248, 255, 1);border-radius: 8px; text-align: left;" class="contact-form">
                 <h3>Got an idea? We've got the skills.</h3>
                 <p>Fill out our contact form and we'll get in touch!</p>
                 <form>
@@ -137,7 +147,7 @@
                         </div>
                     </div>
                     <div>
-                        <label for="description">Description (Optional)</label>
+                        <label for="description">Deep details about your query (Optional)</label>
                         <textarea id="description" placeholder="Tell us more about your query"></textarea>
                     </div>
                     <button type="submit" class="btn-primary">Submit Inquiry</button>
